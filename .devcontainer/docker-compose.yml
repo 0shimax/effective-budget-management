@@ -1,0 +1,12 @@
+version: "3"
+services:
+  effective-budget-management:
+    container_name: effective-budget-management
+    image: sh7/avazu-ctr:v0.1
+    command: sleep infinity
+    ports:
+      - 8888:8888
+      - 5000:5000
+    volumes:
+      - C:\Users\sh70k\project:/project
+      - C:\Users\sh70k\data:/data
