@@ -10,7 +10,7 @@ def imp_for_bid_price(
 def calculate_mprice(
     pctrs: numpy.ndarray, mprices: numpy.ndarray, threshold: float
 ) -> float:
-    return numpy.where(pctrs >= threshold, mprices, 0)[0].mean()
+    return mprices[pctrs >= threshold].mean()
 
 
 def win_rate(bid_price: float, k1: float, k2: float):
